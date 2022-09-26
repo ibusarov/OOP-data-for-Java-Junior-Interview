@@ -1,0 +1,2 @@
+Jenkins is a highly extensible product whose functionality can be extended through the installation of plugins.
+There are a vast array of plugins available to Jenkins. However, the documentation covered in the Guided Tour, Tutorials, Solution pages and User Handbook of this documentation are based on a Jenkins installation with the Blue Ocean plugins installed, as well as the "suggested plugins", which are specified when running through the Post-installation setup wizard.
