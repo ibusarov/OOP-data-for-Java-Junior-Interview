@@ -35,7 +35,7 @@ public class StringHandling {
 
     }
 
-    //Length of longest substring
+    //Length of the longest substring
     public static int lengthOfLongestSubstring(String s) {
         int maxLength = 0;
 
@@ -115,6 +115,25 @@ public class StringHandling {
         }
 
         return result;
+    }
+
+    /*
+    find the indexes of sum of two element in an array to match to target amount
+    [2, 4, 8] target = 6
+     */
+
+    private static int[] twoSum(int [] nums, int target){
+        Map<Integer, Integer> targetMap = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            Integer index = targetMap.get(nums[i]);
+            if (index != 0){
+                return new int[]{i, index};
+            }
+            targetMap.put(target - nums[i], i);
+        }
+
+        return nums;
     }
 
 
